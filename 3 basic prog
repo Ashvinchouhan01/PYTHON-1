@@ -1,0 +1,93 @@
+1)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter an integer: ";
+    cin >> n;
+
+    if (n % 2 == 0)
+        cout << n << " is even." << endl;
+    else
+        cout << n << " is odd." << endl;
+
+    return 0;
+}
+In python 
+n = int(input("Enter an integer: "))
+
+if n % 2 == 0:
+    print(f"{n} is even.")
+else:
+    print(f"{n} is odd.")
+
+2)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter an integer: ";
+    cin >> n;
+
+    if ((n & 1) == 0)
+        cout << n << " is even." << endl;
+    else
+        cout << n << " is odd." << endl;
+
+    return 0;
+}
+In python 
+n = int(input("Enter an integer: "))
+
+if n & 1 == 0:
+    print(f"{n} is even.")
+else:
+    print(f"{n} is odd.")
+
+3)
+
+a = int(input("Enter first number (a): "))
+b = int(input("Enter second number (b): "))
+
+# Swap without using a third variable
+a = a + b
+b = a - b
+a = a - b
+
+print(f"After swapping: a = {a}, b = {b}")
+
+4)
+
+In python 
+n = int(input("Enter a number: "))
+
+if n % 10 == 0:
+    print("n is divisible by 10")
+if n % 11 == 0:
+    print("n is divisible by 11")
+if n % 10 != 0 and n % 11 != 0:
+    print("n is not divisible by 10 and 11")
+In c++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+
+    if (n % 10 == 0)
+        cout << "n is divisible by 10" << endl;
+    
+    if (n % 11 == 0)
+        cout << "n is divisible by 11" << endl;
+    
+    if (n % 10 != 0 && n % 11 != 0)
+        cout << "n is not divisible by 10 and 11" << endl;
+
+    return 0;
+}
